@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #B6D0E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container{
+    position:relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1600px;
+    margin: 50px;
+    background: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0,0,0,0.1);
+    box-shadow: 13px 10px 8px black;
+}
+.container .left_side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+
+}
+
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    border-bottom: 1.5px solid rgba(255,255,255,0.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.profileText h2{
+    color: aliceblue;
+    font-size: 1.7em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2:hover{
+    color: #c6c6c6;
+}
+.profileText h2 span{
+    font-weight: 300;
+    font-size: 0.8em;
+}
+.contactInfo{
+    padding-top: 40px;
+}
+.title{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.title:hover{
+    color: rgb(154, 165, 176);
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo ul li .icon:hover{
+    color: whitesmoke;
+}
+.contactInfo ul li span{
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 18px;
+}
+.contactInfo ul li a{
+    color: whitesmoke;
+    font-weight: 300; 
+    font-size: 18px;
+}
+.contactInfo ul li a:hover{
+    color: #03a9f4;
+}
+.contactInfo ul li span:hover{
+    color: #03a9f4;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+    font-size: 16px;
+}
+.contactInfo.education h5:hover{
+    color: whitesmoke;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 600;
+}
+.contactInfo.language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(107, 104, 104);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+.contactInfo.language .text{
+    font-size: 18px;
+}
+.contactInfo.language .percent div:hover{
+    background-color: #B6D0E2;
+}
+.container .right_side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+    
+}
+.workexperience li{
+    margin-bottom: 15px;
+}
+.workexperience h5{
+    color: grey;
+    font-weight: 500;
+    font-size: 20px;
+}
+.workexperience h4{
+    color: black;
+    font-weight: 600;
+}
+.workexperience h4:nth-child(2){
+    color: #9b4b4b;
+    font-weight: 600;
+    font-size: 20px;
+}
+.workexperience h3{
+    color: #9b4b4b;
+    font-weight: 600;
+    font-size: 25px;
+}
+.workexperience h2{
+    color: #084663;
+    font-weight: 600;
+    font-size: 28px;
+}
+.workexperience ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.projects h2{
+    color: #084663;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 30px;
+    text-align: justify;
+    
+    
+    
+}
+.projects ul li{
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    list-style-position: inside;
+    
+    text-align: justify;
+    text-justify: inter-word;
+}
+.projects .key p{
+    font-weight: 800;
+    font-size: 17px;
+}
+.projects .key1{
+    margin-top: 10px;
+    font-size: 17px;
+
+}
+.projects h4{
+    font-weight: 800;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.projects h5{
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(112, 104, 104);
+}
+.projectspara1{
+    text-align: justify;
+    margin-top: 10px;
+}
+.projectspara2{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.projects1 h5{
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(112, 104, 104);
+}
+.projects1para1{
+    text-align: justify;
+    margin-top: 10px;
+}
+.projects1 .key2{
+    margin-top: 10px;
+    font-size: 17px;
+}
+hr {
+    position: relative;
+    top: 15px;
+    border: none;
+    height: 2px;
+    background: black;
+    margin-bottom: 50px;
+}
+.skills .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: darkgray;
+    display: block;
+    margin-top: 5px;
+}
+.skills h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 29px;
+    color: #084663;
+}
+.skills h3:hover{
+    color: grey;
+}
+.skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.skills .percent div:hover{
+    background-color: #B6D0E2;
+}
+.skills .title{
+    color: #084663;
+    font-size: 28px;
+    margin-top: 30px;
+}
+.hobbies{
+    margin-top: 35px;
+}
+
+.hobbies ul{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+}
+.hobbies ul li{
+    list-style: none;
+    color: whitesmoke;
+    
+}
+.hobbies ul li .icons{
+    display: inline-block;
+    font-size: 17px;
+    color: #03a9f4;
+}
+.hobbies ul li .text1{
+    color: whitesmoke;
+}
+.hobbies ul li .icons:hover{
+    color: whitesmoke;
+}
+.hobbies .title2{
+    color: whitesmoke;
+}
+.hobbies .title2:hover{
+    color: gray;
+}
+.hobbies .text1{
+    font-size: 18px;
+}
